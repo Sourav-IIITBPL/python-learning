@@ -58,3 +58,12 @@ i = 0
 while i < len(x):
     print(x[i],sep=",",end=" ")
     i += 1
+
+myList = [1,2,3,4,5]
+myModifiedList = map(lambda x: x**2, myList)
+print(list(myModifiedList))
+
+x = int(input("enter a number "))
+y = int(input("enter another number "))
+tuple = lambda x, y: (x**2, y**2)
+print(tuple(x,y))
