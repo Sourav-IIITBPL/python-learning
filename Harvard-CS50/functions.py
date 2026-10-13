@@ -10,7 +10,7 @@ def userName(name="world"): # default value of parameter.
     print(f"hello, {name}")
 
 def squared(x=1,y=1):
-    print(f"{x} squared is {x**2}")
+    print(f"{x} squared is {x**2}") # f here is called as format string literal or f-string . it is used to format the string by replacing the placeholders with the values of the variables . the placeholders are defined using curly braces {} and the variables are placed inside the curly braces . the f-string is prefixed with the letter f or F .
     print(f"{y} squared is {y**2}")
 
 main()

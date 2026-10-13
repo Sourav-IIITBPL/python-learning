@@ -48,3 +48,31 @@ except ValueError:
 # this print works for vaild int input but for invalid input , this print will throw NameError because x is not defined or assigned any value 
 # when the user enters an invalid input and the except block is executed . 
 print(x)   
+
+# try and except block is used to handle exceptions in python . it is used to catch exceptions that may occur in the try block and handle them in the except block .
+# the try block contains the code that may raise an exception and the except block contains the code that will be executed when an exception is raised . 
+# the except block can also take an argument that is the type of exception that it will catch . if no argument is given , it will catch all exceptions .
+
+try:
+    x = int(input("enter your number "))
+except ValueError as e:
+    print(f"please enter a valid number {e}")
+
+# raise statement is used to raise an exception in python . it is used to raise an exception when a certain condition is met . 
+# it can be used to raise built-in exceptions or user-defined exceptions . it can also be used to raise an exception with a custom error message .
+while True:
+    try:
+        x = int(input("enter an age"))
+        if x < 0:
+            raise ValueError("x is negative")
+        break
+    except ValueError as e:
+        print(e)
+
+
+try:
+    x = int(input("enter a number "))
+except ValueError as e:
+    print(f"please enter a valid number {e}")
+    raise
+
