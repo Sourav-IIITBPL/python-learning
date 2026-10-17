@@ -36,8 +36,6 @@ def main():
 
 
 
-
-
 # classes with property and decorators methods 
 
 class Courses:
